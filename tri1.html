@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1° TRIMESTRE</title>
+</head>
+
+<body>
+
+    <!--#region BARRA DE NAVEGAÇÃO  -->
+    <table>
+        <tr>
+            <td><a href="index.html">HOME</a></td>
+        </tr>
+    </table>
+    <br><br>
+    <!--#endregion-->
+    <br>
+    <div class="caixa" style="width:700px">
+        <h1 class="textCenter">MATEMÁTICA FINANCEIRA</h1>
+        <h2>A matemática financeira se divide em 2 partes:</h2>
+        <ul>
+            <li><h3><a class="simples" href="#cap">Sistema de Capitalização</a></h3></li>
+            <li><h3><a class="simples" href="#amo">Sistema de Amortização</a></h3></li>
+        </ul>
+
+        <br id="cap">
+        <h3>Sistema de Capitalização<br><grey>Fórmula: M = P [ <sup>(1 + i)<sup>n</sup></sup> / <sub>i</sub> ]</grey></h3>
+        <p style="text-align: justify;">    Serve para calcular um valor futuro de vários depósitos iguais. Um exemplo seria uma conta poupança, onde é depositado um valor todo mês, nessa situação, "P" seria o valor depositado, "N" seriam os meses, M seria o muntante e "i" seria o juro. (Analizado a partir de uma das questões de exemplo).</p>
+        <p style="text-align: justify;">    Para fazer calculos de capitalização normalmente é utilizado uma calculadora, pois se perde precisão após arredondar várias vezes.</p>
+
+        <br id="amo">
+        <h3>Sistema de Amortização<br><grey>Fórmulas: C = P [<sup>(1 + i)<sup>n</sup> - 1</sup> / <sub>i (1 + i)<sup>n</sup></sub>] ou P = C [<sup>i (1 + i)<sup>n</sup></sup> / <sub> (1 + i)<sup>n</sup> - 1 </sub>]</grey></h3>
+        <p style="text-align: justify;">    Amortização é o contrário, é fazer pagamentos para acabar com uma dívida existente. Existem duas fórmulas, dependendo do valor que é preciso encontrar (Valor das Prestações ou o Capital Inicial).</p>
+        <p style="text-align: justify;">    Nesse se mostra muito mais importante o uso da calculadora para resultados precisos.</p>
+    </div>
+
+    <br>
+    <div class="caixa" style="width:700px">
+        <h1 class="textCenter">Matrizes</h1>
+        <p class="textCenter"><b><a class="simples" href="https://ferrarex.github.io/MatMatriz/">Aperte aqui para ir entrar no meu trabalho sobre matrizes!</a></b></p>
+        <p style="text-align: justify;">    É uma cadeia de números parecida com os Arrays. Dentro das matrizes podem ser armazenados vários tipos de valores, EX: inteiros, decimais, frações, raízes, etc.</p>
+        <p>Exemplo de Matrizes:</p>
+        
+        <table class="matriz">
+            <tr><td>1</td><td>3</td></tr>
+            <tr><td>-4</td><td>0</td></tr>
+            <tr><td>7</td><td>1</td></tr>
+        </table>
+        <br>
+        <table class="matriz">
+            <tr><td><sup>1</sup> / <sub>2</sub></td><td>√3</td></tr>
+            <tr><td>-2,5</td><td>0</td></tr>
+        </table>
+
+        <h3>Geral</h3>
+        <ol>
+            <li>Se o tamanho de linhas é diferente do tamanho de colunas, a matriz é retangular, casó contrário, quadrada</li>
+            <li>Ao representar elementos, se segue o padrão aij ("i" sendo linha e "j" sendo coluna)</li>
+            <li>Uma matriz de só uma coluna é chamada "matriz coluna", e uma matriz de só uma linha é chamada "matriz linha"</li>
+            <li>Quando todos os termos de uma matriz são 0, ela é uma matriz zerada</li>
+            <li>Uma matriz é diagonal quando o valor de aij é zero em todas as casas que não sejam da diagonal principal</li>
+            <li>Matriz identidade é uma matriz diagonal só com 1</li>
+            <li>Matriz triangular superior ou inferior acontece quando os termos acima ou abaixo da diagonal principal são zerados</li>
+        </ol>
+    </div>
+
+    <br>
+    <div class="caixa" style="width:920px">
+        <h1 class="textCenter">Determinantes</h1>
+        <p style="text-align: justify;">    Determinante é o número que uma matriz quadrata tem. pode ser representada por det(M), |M| ou det(M<sub>l x c</sub>) <grey>(retirado dos slides)</grey>. Cada um dos tamanhos tem formas diferentes de se calcular o determinante.</p>
+        <p style="text-align: justify;">    Não entendi o uso dos determinantes em situações do dia a dia.</p>
+        <h3>Propriedades gerais de determinantes:</h3>
+        <ol>
+            <li>Uma matriz com uma linha ou coluna zerada, terá seu determinante 0</li>
+            <li>Quando há duas filas paralelas iguais ou proporcionais, seu determinante será 0</li>
+            <li>A determinante de uma matriz e a determinante da mesma matriz composta é igual</li>
+            <li>Caso multiplique uma fila por um número, o determinante também será multiplicado pelo mesmo</li>
+            <li>Ao trocar filas, o determinante é multiplicado por -1.</li>
+            <li>Binet: se A e B são matrizes de mesmo tamanho, o determinante de (A*B) é igual o determinante de A multiplicado pelo determinante de B</li>
+            <li>O determinante de uma matriz triangular é o produto dos elementos da diagonal principal. <grey>(pego dos slides)</grey></li>
+            <li>Jacob: Não entendi o Teorema</li>
+        </ol>
+    
+        <ul>
+            <li><h3><a class="simples" href="#d1">Determinantes tamanho 1</a></h3></li>
+            <li><h3><a class="simples" href="#d2">Determinantes tamanho 2</a></h3></li>
+            <li><h3><a class="simples" href="#d3">Determinantes tamanho 3</a></h3></li>
+            <li><h3><a class="simples" href="#d4">Determinantes tamanho 4</a></h3></li>
+        </ul>
+
+        <br id="d1">
+        <h3>Determinantes de tamanho 1 <grey>( M<sub>1 x 1</sub> )</grey></h3>
+        <p style="text-align: justify;">    A mais fácil de todas, o 11 da matriz já é o próprio determinante.</p>
+        
+        <div class="def">
+            <p>M = </p>
+            <p class="matriz">M11</p>
+        </div>
+        <p class="textCenter"><resp>det(M<sub>1x1</sub>) = M11</resp></p>
+
+        <br id="d2">
+        <h3>Determinantes de tamanho 2 <grey>( M<sub>2 x 2</sub> )</grey></h3>
+        <p style="text-align: justify;">    Para encontrar o determinante em matrizes 2x2, é necessário fazer a multiplicação dos termos da diagonal principal e subtrair com o produto dos termos da diagonal secundária.</p>
+        
+        <div class="def">
+            <p>M = </p>
+            <table class="matriz">
+                <tr><td>M11</td><td>M12</td></tr>
+                <tr><td>M21</td><td>M22</td></tr>
+            </table>
+        </div>
+        <p class="textCenter"><resp>det(M<sub>2x2</sub>) = M11 * M22 - M12 * M21</resp></p>
+
+        <br id="d3">
+        <h3>Determinantes de tamanho 3 <grey>( M<sub>3 x 3</sub> )</grey></h3>
+        <p style="text-align: justify;">    Para encontrar o determinante em matrizes 3x3, é necessário repetir as primeiras 2 colunas, e fazer 3 diagonais principais e 3 diagonais secundárias. Após isso, basta repetir o processo do determinante 2x2.</p>
+        
+        <div class="def">
+            <p>M = </p>
+            <table class="matriz">
+                <tr><td>M11</td><td>M12</td><td>M13</td></tr>
+                <tr><td>M21</td><td>M22</td><td>M23</td></tr>
+                <tr><td>M31</td><td>M32</td><td>M33</td></tr>
+            </table>
+        </div>
+
+        <p class="textCenter"><resp>det(M<sub>3x3</sub>) = (M11 * M22 * M33 + M12 * M23 * M31 + M13 * M21 * M32) - (M13 * M22 * M31 + M11 * M23 * M32 + M12 * M21 * M33)</resp></p>
+        <br id="d4">
+        <h3>Determinantes de tamanho 4 <grey>( M<sub>4 x 4</sub> )</grey></h3>
+        <p style="text-align: justify;">    Para a resolução de Matrizes 4x4, utilizamos Chió.</p>
+        <p style="text-align: justify;">    Chió só pode ser aplicada se o primeiro termo da matriz tem valor 1, para alcançar isso, podem ser aplicadas as propriedades.</p>
+        
+        <img src="images/det4x4.png">
+        <p><grey>(retirado dos slides)</grey></p>
+        <p style="text-align: justify;">Após isso, você terá uma matriz 3x3, onde poderá ser aplicado Chió novamente, ou resolver por meio das diagonais.</p>
+    </div>
+
+    <br>
+    <div class="caixa" style="width:700px">
+        <h1 class="textCenter">Autoavaliação / Meu entendimento</h1>
+        <p style="text-align: justify;">    Consegui entender muito bem os conteúdos apresentados durante o primeiro trimesmtre. No inicio tive dificuldades especialmente com Amortização, mas a partir do momento em que consegui ligar os assuntos com temas presentes no meu dia a dia senti uma diferença enorme no entendimento. Sobre as matrizes, não houve dificuldade, já tinha visto um pouco do conteúdo em outros lugares, e na programação costumo usar Arrays (algo parecido com matrizes) para quase tudo.</p>
+        <p style="text-align: justify;">    O maior problema encontrado, foi em anuidades, onde tive dificuldade em saber montar a conta interpretando a questão e em determinantes 4x4, onde é fácil errar um número e acabar com a conta inteira.</p>
+        <p><b>Nota:</b> <lime>9.2</lime></p>
+    </div>
+</body>
+
+</html>
